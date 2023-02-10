@@ -27,8 +27,8 @@ public class AddCoursePage {
         ElementActions.doClick(driver,courseTeacherDropMenu);
         ElementActions.doClick(driver,firstTeacher);
         ElementActions.doClick(driver,createButton);
-        //BrowserActions.closeAlert(driver);
         Thread.sleep(2000);
+        BrowserActions.acceptAlert(driver);
         ElementActions.doClick(driver,coursesList);
         return new CoursesPage(driver);
     }
